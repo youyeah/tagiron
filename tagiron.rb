@@ -1,4 +1,8 @@
 require 'active_support/all'
+
+#"注意：sortの関係で色の並び順が本来のタギロンと違い、青が左で赤が右になっています。"
+#"0は偶数です。"
+
 class Card
 
     def initialize
@@ -438,9 +442,4 @@ class Card
 
 end
 
-
-tagiron = Card.new
-tagiron.start
-
-#"注意：sortの関係で色の並び順が本来のタギロンと違い、青が左で赤が右になっています。"
-#"0は偶数です。"
+Card.new.start
