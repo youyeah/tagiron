@@ -423,7 +423,7 @@ class Card
 
     def check_answer
         if @answer_ary == @target_card
-            bingo_answer
+            @is_player1_turn ? bingo_answer("1") : bingo_answer("2")
         else
             puts("不正解！間違っています！")
             turn
